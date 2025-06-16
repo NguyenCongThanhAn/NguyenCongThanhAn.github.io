@@ -101,6 +101,7 @@ ul li a:hover {
     height: fit-content;
 }
 .offer{
+    position: relative;
     border: 3px solid blueviolet;
     border-radius: 1em;
     min-width: 10em;
@@ -126,11 +127,26 @@ ul li a:hover {
     float: left;
     display: block;
     width: 100%;
-    list-style: circle;
     margin-top: 0.8em;
+}
+.pricetag {
+    position: absolute;
+    border: inherit;
+    text-align: center;
+    padding: auto;
+    border-radius: 0.5em;
+    font-weight: bold;
+    bottom: 1em;
+    height: 2em;
+    width: 80%;
+margin: 1em;
 }
 .premium {
     border: 3px solid red;
+}
+.premium .pricetag{
+    background-color: red;
+    color: white;
 }
 footer {
     padding: 1em 10px;
